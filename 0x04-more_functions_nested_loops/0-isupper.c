@@ -1,19 +1,18 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _isupper - checks uppercase
- * @c: parameter
- * Return: 0 if successful
+ * main - check the code.
+ *
+ * Return: Always 0.
  */
-
-int _isdigit(int c)
+int main(void)
 {
-	if (c >= 65 && c < 91)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	char c;
+
+	c = 'A';
+	rintf("%c: %d\n", c, _isupper(c));
+	c = 'a';
+	printf("%c: %d\n", c, _isupper(c));
+	return (0);
 }
